@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.fondoContacto {
+    background-color: #1CB698;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5vw 4vw;
+}
+
+.carrito {
+    width: 10vw; /* Cambiar a unidades relativas */
+    height: auto; /* Para mantener la proporción */
+}
+
+.img-producto {
+    width: 100%;
+    height: auto;
+}
+
+.sobremi {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 5vw 4vw; /* Unidades relativas */
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.sobremi h2 {
+    font-size: 4vw; /* Cambiado a vw para ser responsive */
+    font-family: 'Righteous', sans-serif;
+    text-align: center;
+    padding: 2vw 0; /* Unidades relativas */
+}
+
+.sobremi .contenido-seccion p {
+    font-size: 2vw;
+    line-height: 2.5vw; /* Ajustado para mejor legibilidad */
+    margin-bottom: 2vw;
+}
+
+.sobremi .contenido-seccion p span {
+    color: #1CB698;
+    font-weight: bold;
+}
+
+.sobremi .fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col {
+    flex: 1 1 100%; /* Columna toma 100% por defecto */
+}
+
+.sobremi .fila .col h3 {
+    font-size: 3vw; /* Ajustado a vw */
+    font-family: 'Righteous', sans-serif;
+    margin-bottom: 2vw;
+}
+
+.sobremi .fila .col ul {
+    list-style: none;
+}
+
+.sobremi .fila .col ul li {
+    margin: 2vw 0; /* Unidades relativas */
+}
+
+.sobremi .fila .col ul li strong {
+    display: inline-block;
+    color: #1CB698;
+    width: auto; /* Cambiado para ser más flexible */
+}
+
+.sobremi .fila .col ul li span {
+    background-color: #1CB698;
+    padding: 0.5vw; /* Unidades relativas */
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.img-carrusel {
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%; /* Hacerlo responsive */
+    height: auto; /* Mantener proporción */
+}
+
+.sombra {
+    color: #fff;
+    box-shadow: 2px 3px 10px greenyellow;
+}
+
+.productos {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 5vw 4vw; /* Unidades relativas */
+}
+
+.pie-pagina {
+    width: 100%;
+    background-color: #0a141d;
+}
+
+.pie-pagina .grupo-1 {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Columna flexible */
+    grid-gap: 20px; /* Espaciado responsivo */
+    padding: 5vw 0; /* Unidades relativas */
+}
+
+.pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: auto; /* Para imágenes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+    width: 100%; /* Hacerlo responsive */
+    max-width: 250px; /* Limitar tamaño máximo */
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 2vw; /* Unidades relativas */
+    font-size: 2vw; /* Ajustado a vw */
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 1vw; /* Unidades relativas */
+}
+
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 10vw; /* Cambiar a unidades relativas */
+    height: 10vw; /* Cambiar a unidades relativas */
+    line-height: 10vw; /* Cambiar a unidades relativas */
+    color: #fff;
+    margin-right: 1vw; /* Unidades relativas */
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #0a1a2a;
+    padding: 3vw; /* Unidades relativas */
+    text-align: center;
+    color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 1.5vw; /* Ajustado a vw */
+}
+
+/* Media Queries para ajustes adicionales */
+@media (max-width: 768px) {
+    .sobremi h2 {
+        font-size: 6vw; /* Ajustado para pantallas más pequeñas */
+    }
+    .sobremi .contenido-seccion p {
+        font-size: 3vw;
+    }
+    .sobremi .fila .col h3 {
+        font-size: 5vw;
+    }
+}
